@@ -3,7 +3,6 @@
 SweetShop is a full-stack MERN application for managing and selling sweets online.  
 It provides a public storefront for customers and a secure admin dashboard for managing inventory.
 
-![SweetShop Banner](https://via.placeholder.com/1200x300.png?text=SweetShop)
 
 ---
 
