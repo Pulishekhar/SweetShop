@@ -1,4 +1,4 @@
-# 🍬 SweetShop – Full-Stack Sweets Store
+#  SweetShop – Full-Stack Sweets Store
 
 SweetShop is a full-stack MERN application for managing and selling sweets online.  
 It provides a public storefront for customers and a secure admin dashboard for managing inventory.
@@ -6,14 +6,14 @@ It provides a public storefront for customers and a secure admin dashboard for m
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 👩‍🍳 **For Customers**
+###  **For Customers**
 - Browse available sweets by name, category, and price.
 - Purchase sweets directly from the store.
 - Real-time stock updates after each purchase.
 
-### 🛠️ **For Admins**
+###  **For Admins**
 - **Add** new sweets (bulk or single).
 - **Update** sweets information (name, category, price, quantity).
 - **Delete** sweets from inventory.
@@ -22,7 +22,7 @@ It provides a public storefront for customers and a secure admin dashboard for m
 
 ---
 
-## 🏗️ Tech Stack
+##  Tech Stack
 
 | Frontend | Backend | Database | Auth & Others |
 |----------|---------|----------|---------------|
@@ -30,7 +30,7 @@ It provides a public storefront for customers and a secure admin dashboard for m
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 sweetshop/
 │
@@ -57,14 +57,14 @@ sweetshop/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
-### 1️⃣ Clone the repository --bash
+###  Clone the repository --bash
 git clone https://github.com/Pulishekhar/sweetshop.git
 cd sweetshop
 
 
-🎨 UI Highlights
+ UI Highlights
 
 Modern, colorful interface built with TailwindCSS.
 
@@ -72,7 +72,7 @@ Responsive design for mobile & desktop.
 
 Real-time toast notifications for all operations.
 
-📝 Future Improvements
+ Future Improvements
 
 Payment integration for purchases.
 
