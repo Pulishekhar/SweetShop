@@ -116,3 +116,37 @@ export const checkAuth = (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 };
+
+export const adminLogin = async (req, res) => {
+  const { email, password } = req.body;
+
+  try {
+    const adminUser = await User.findOne({ email });
+
+    if (!adminUser) {
+      return res.status(400).json({ message: "Invalid credentials" });
+    }
+
+    const isPasswordCorrect = await bcrypt.compare(password, adminUser.password);
+    if (!isPasswordCorrect) {
+      return res.status(400).json({ message: "Invalid credentials" });
+    }
+
+    if (!adminUser.isAdmin) {
+      return res.status(403).json({ message: "Access denied. Not an admin." });
+    }
+
+    generateToken(adminUser._id, res);
+
+    res.status(200).json({
+      _id: adminUser._id,
+      fullName: adminUser.fullName,
+      email: adminUser.email,
+      isAdmin: adminUser.isAdmin,
+      profilePic: adminUser.profilePic,
+    });
+  } catch (error) {
+    console.error("Admin login error:", error.message);
+    res.status(500).json({ message: "Server error" });
+  }
+};

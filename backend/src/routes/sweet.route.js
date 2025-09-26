@@ -2,7 +2,7 @@ import express from "express";
 import Sweet from "../models/sweet.model.js"; // your Sweet model
 import { protectRoute } from "../middleware/auth.middleware.js";
 import { isAdmin } from "../middleware/isAdmin.js";
-
+import Bag from "../models/bag.model.js";
 const router = express.Router();
 
 // ---------------------
@@ -194,4 +194,6 @@ router.post("/:id/restock", protectRoute, isAdmin, async (req, res) => {
     res.status(500).json({ message: "Internal Server Error" });
   }
 });
-export default router;
+
+
+export default router;2
