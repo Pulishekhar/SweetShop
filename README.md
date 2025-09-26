@@ -97,7 +97,8 @@ Admins Dashboard
 
 
 User Dashboard 
-<img width="1688" height="1113" alt="Screenshot 2025-09-26 192013" src="https://github.com/user-attachments/assets/fc28c83f-63bd-4ce5-9d4d-c79e33387c1b" />
+<img width="1688" height="1033" alt="Screenshot 2025-09-26 192013" src="https://github.com/user-attachments/assets/143900eb-c8d2-4108-8c7f-d069dab23b9b" />
+
 
 
 
