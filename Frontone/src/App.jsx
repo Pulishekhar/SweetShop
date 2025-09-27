@@ -46,7 +46,7 @@ const App = () => {
         <Route path="/settings" element={<SettingsPage />} />
         <Route path="/profile" element={authUser ? <ProfilePage /> : <Navigate to="/login" />} />
          <Route path="/admin/login" element={<AdminLoginPage />} />
-         <Route path="/admin/dashboard" element={<AdminDashBoard/>} />
+         
       </Routes>
        
       <Toaster />
